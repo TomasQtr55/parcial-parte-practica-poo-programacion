@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Banco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h2 class="text-hader">Banco Mesa Verde</h2>
+            <button class="btn-principal" id="cerrar-sesion">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <h2>Hacer una transferencia</h2>
+        <div class="cuentas">
+            <div class="mi-cuenta">
+                <h4>Seleciona una de tus cuentas</h4>
+                <select class="select-banco" id="opciones-mi-cuentas">
+                    <option value="" hidden selected>Selecionar Cuenta</option>
+                  
+                </select>
+                
+            </div>
+            <div class="otra-cuenta">
+                <h4>Seleciona una persona para transferir</h4>
+                <select class="select-banco" id="opciones-otra-cuentas">
+                    <option value="" hidden selected>Selecionar persona</option>
+                    
+                </select>
+               
+            </div>
+        </div>
+       
+
+       
+        <input type="number" min="0" id="inp-transfer" class="input-transferencia" placeholder="Ingresar el monto">
+        <button id="btn-hacer-transferencia" class="btn-principal">Hacer transferencia</button>
+
+
+    </div>
+
+    <div id="mensaje" class="container">
+        
+    </div>
+
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
